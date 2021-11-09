@@ -5,15 +5,18 @@ using UnityEngine.XR.ARFoundation;
 
 public class ButtonClick : MonoBehaviour
 {
-    [SerializeField] GameObject face;
-    [SerializeField] private ARSession _session;
+    [SerializeField] Material material;
 
     public void ChangePrefab()
     {
         GameObject sessionOrigin = GameObject.FindWithTag("ARSessionOrigin");
         ARFaceManager arFaceManager = sessionOrigin.GetComponent<ARFaceManager>();
-        arFaceManager.facePrefab = face;
+        //arFaceManager.facePrefab = face;
+        //arFaceManager.facePrefab.GetComponent<MeshRenderer>().material = material;
 
-        _session.Reset();
+        foreach(ARFace face in arFaceManager.trackables)
+        {
+            face.GetComponent<MeshRenderer>().material = material;
+        }
     }
 }
