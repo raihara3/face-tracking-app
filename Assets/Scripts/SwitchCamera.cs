@@ -6,6 +6,7 @@ using UnityEngine.XR.ARFoundation;
 public class SwitchCamera : MonoBehaviour
 {
     [SerializeField] ARCameraManager aRCameraManager;
+    [SerializeField] ARSessionOrigin aRSessionOrigin;
 
     string direction = "user";
 

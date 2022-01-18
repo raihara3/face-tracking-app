@@ -809,7 +809,6 @@ RectTransform:
   m_Children:
   - {fileID: 1894982459}
   - {fileID: 1851405447}
-  - {fileID: 1483252150}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 99.339}
@@ -1257,7 +1256,7 @@ GameObject:
   - component: {fileID: 1483252151}
   - component: {fileID: 1483252154}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CameraButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1270,18 +1269,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483252149}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 107.2211}
+  m_LocalScale: {x: 2.2222223, y: 2.2222223, z: 2.2222223}
   m_Children:
   - {fileID: 2013104418}
-  m_Father: {fileID: 921469688}
-  m_RootOrder: 2
+  m_Father: {fileID: 1851405447}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67.8, y: 161.7}
-  m_SizeDelta: {x: 58.689, y: 28.2647}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -82.98938, y: 659.9112}
+  m_SizeDelta: {x: 58.688995, y: 28.264702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483252151
 MonoBehaviour:
@@ -1390,6 +1389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aRCameraManager: {fileID: 998062890}
+  aRSessionOrigin: {fileID: 0}
 --- !u!1 &1577749883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3084966409128450725, guid: 3b1c5fd7b9e2d4b4f93de948f6a63661,
@@ -1633,6 +1633,7 @@ RectTransform:
   - {fileID: 1671726592}
   - {fileID: 225477336}
   - {fileID: 529605564}
+  - {fileID: 1483252150}
   m_Father: {fileID: 921469688}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
